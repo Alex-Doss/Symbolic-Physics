@@ -1,0 +1,120 @@
+{
+  "symbols": [
+    {
+      "name": "S0",
+      "state": -0.03656387676449535
+    },
+    {
+      "name": "S1",
+      "state": -0.8703480804686479
+    },
+    {
+      "name": "S2",
+      "state": -0.24000780973686808
+    },
+    {
+      "name": "S3",
+      "state": 0.07813418447114362
+    },
+    {
+      "name": "S4",
+      "state": -0.15108091190690476
+    },
+    {
+      "name": "S5",
+      "state": 0.4131632556726943
+    },
+    {
+      "name": "S6",
+      "state": 0.48853170884643626
+    }
+  ],
+  "links": [
+    {
+      "from": "S0",
+      "to": "S6",
+      "weight": 1.420611719573485,
+      "type": "cycle"
+    },
+    {
+      "from": "S1",
+      "to": "S6",
+      "weight": 1.1374178730593476,
+      "type": "bind"
+    },
+    {
+      "from": "S2",
+      "to": "S3",
+      "weight": 0.918699773571433,
+      "type": "bind"
+    },
+    {
+      "from": "S2",
+      "to": "S6",
+      "weight": 0.5573822235648888,
+      "type": "bind"
+    },
+    {
+      "from": "S3",
+      "to": "S0",
+      "weight": 0.670829280117628,
+      "type": "cycle"
+    },
+    {
+      "from": "S3",
+      "to": "S1",
+      "weight": 0.9904985818582054,
+      "type": "bind"
+    },
+    {
+      "from": "S3",
+      "to": "S4",
+      "weight": 0.5041039914441285,
+      "type": "cycle"
+    },
+    {
+      "from": "S4",
+      "to": "S0",
+      "weight": 0.7806778790888236,
+      "type": "cycle"
+    },
+    {
+      "from": "S4",
+      "to": "S5",
+      "weight": 0.6774785462322602,
+      "type": "cycle"
+    },
+    {
+      "from": "S5",
+      "to": "S4",
+      "weight": 1.4247272559137336,
+      "type": "bind"
+    },
+    {
+      "from": "S6",
+      "to": "S1",
+      "weight": 1.373180199944437,
+      "type": "cycle"
+    },
+    {
+      "from": "S6",
+      "to": "S2",
+      "weight": 0.5604164396142371,
+      "type": "bind"
+    }
+  ],
+  "modifiers": [
+    {
+      "target": "S0",
+      "rule": "random_invert"
+    },
+    {
+      "target": "S0",
+      "rule": "noise_seed"
+    },
+    {
+      "target": "S1",
+      "rule": "background_noise"
+    }
+  ]
+}

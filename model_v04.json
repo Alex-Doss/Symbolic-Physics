@@ -1,0 +1,40 @@
+{
+  "symbols": [
+    {
+      "name": "A",
+      "state": 0
+    },
+    {
+      "name": "B",
+      "state": 0
+    }
+  ],
+  "links": [
+    {
+      "from": "A",
+      "to": "B",
+      "weight": 1.0,
+      "type": "bind"
+    },
+    {
+      "from": "B",
+      "to": "A",
+      "weight": 1.0,
+      "type": "cycle"
+    }
+  ],
+  "modifiers": [
+    {
+      "target": "A",
+      "rule": "random_invert"
+    },
+    {
+      "target": "A",
+      "rule": "noise_seed"
+    },
+    {
+      "target": "B",
+      "rule": "background_noise"
+    }
+  ]
+}
